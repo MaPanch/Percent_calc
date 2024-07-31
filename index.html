@@ -9,28 +9,35 @@
   <body>
     <h1>Speed calculator</h1>
 
-    <input type="text" name="speed" id="speedNumber" placeholder="Speed" />
+    <form id="calcForm">
+      <input
+        type="text"
+        name="speed"
+        id="speedNumber"
+        placeholder="Speed"
+        minlength="1"
+        maxlength="4"
+        size="4"
+      />
+      <br />
+      <input
+        type="text"
+        name="percent"
+        id="percentNumber"
+        placeholder="Percent"
+        minlength="1"
+        maxlength="4"
+        size="4"
+      />
+      <p>Result value:</p>
+      <output></output>
+      <output name="result" id="resultNum" placeholder="Result"></output>
+    </form>
 
-    <br />
-    <br />
-
-    <input
-      type="text"
-      name="percent"
-      id="percentNumber"
-      placeholder="Percent"
-    />
-
-    <br />
-    <br />
-
-    <p>See the result value:</p>
-    <input type="text" name="result" id="resultNum" placeholder="Result" />
     <button class="resultButton" id="resultButton">Submit</button>
     <br />
 
     <button class="resetButton" id="reset">Reset</button>
+    <script src="index.js"></script>
   </body>
-
-  <script src="index.js"></script>
 </html>
